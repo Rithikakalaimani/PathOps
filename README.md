@@ -1,4 +1,4 @@
-# Dynamic Shortest Path Engine (DSP-E)
+# PathOps
 
 A real-time graph engine that maintains near-instant shortest path answers under continuous edge updates, without full recomputation.
 
@@ -8,9 +8,8 @@ A real-time graph engine that maintains near-instant shortest path answers under
 
 ## Screenshots
 
-| Dashboard | Shortest path & metrics |
-|-----------|-------------------------|
-| ![PathOps Dashboard](screenshots/Screenshot%202026-01-31%20at%201.01.50%20PM.png) | ![PathOps Shortest Path](screenshots/Screenshot%202026-01-31%20at%201.02.03%20PM.png) |
+![PathOps Dashboard](https://github.com/Rithikakalaimani/PathOps/blob/main/screenshots/Screenshot%202026-01-31%20at%201.02.03%E2%80%AFPM.png)
+![PathOps Shortest Path](https://github.com/Rithikakalaimani/PathOps/blob/main/screenshots/Screenshot%202026-01-31%20at%201.01.50%E2%80%AFPM.png)
 
 ## Core logic
 
@@ -90,17 +89,6 @@ src/main/java/pathops/engine/
   DSPEngine.java  - Incremental Dijkstra engine
 ```
 
-## Live Routing Dashboard (frontend)
-
-A React + Vite + TypeScript UI with Tailwind CSS and React Flow:
-
-- **Graph Controls**: Add / Remove / Update edge; Reset graph; instant success/error feedback
-- **Graph Visualization**: Nodes as circles, edges with weight on hover, shortest path highlighted (bold/green)
-- **Shortest Path Query**: Source, destination, Compute Path → path sequence, total distance, **time taken (ms)**
-- **Metrics & Logs**: Nodes processed, heap operations, cache hits/misses, incremental vs full recomputation count
-
-**Live:** [https://path-ops.vercel.app/](https://path-ops.vercel.app/)
-
 **Local:**
 
 ```bash
@@ -110,12 +98,3 @@ cd frontend && npm install && npm run dev
 Open http://localhost:5173
 
 See `frontend/README.md` for details.
-
-## Later: production-ready
-
-Planned extensions:
-
-- Persistence, replication, metrics.
-- Multi-source or batch queries.
-- Tuning (e.g. when to fall back to full Dijkstra).
-- API layer (REST/gRPC).
