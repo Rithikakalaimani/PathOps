@@ -4,7 +4,7 @@ A real-time graph engine that maintains near-instant shortest path answers under
 
 ## Live Demo
 
-**[PathOps | Live Routing Dashboard](https://path-ops.vercel.app/)**
+**Link : [https://path-ops.vercel.app](https://path-ops.vercel.app/)**
 
 ## Screenshots
 
