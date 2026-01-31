@@ -25,6 +25,9 @@ frontend/tsconfig.tsbuildinfo
 *.swo
 *~
 
+# Docs (markdown)
+*.md
+
 # OS
 .DS_Store
 Thumbs.db
